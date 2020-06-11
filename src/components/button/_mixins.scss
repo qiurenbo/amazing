@@ -1,0 +1,25 @@
+
+// button type  color class generator:
+// primary info warning danger success class
+@mixin btn-type-color-cls($type) {
+  background-color: map-get($theme, button-#{$type}-background-color);
+  border-color:  map-get($theme, button-#{$type}-border-color);
+  color: map-get($theme, button-#{$type}-color);
+}
+
+// button type size class generator:
+// primary info warning danger success class
+@mixin btn-size-cls($size){
+  font-size:  map-get($theme, text-button-#{$size}-font-size);
+  line-height: map-get($theme, text-button-#{$size}-font-line-height);
+  padding: map-get($theme, button-#{$size}-padding);
+}
+
+
+
+// button type hover class generator:
+// primary info warning danger success class
+@mixin btn-type-hover-cls($type) {
+  background-color: map-get($theme, button-#{$type}-hover-background-color);
+
+}

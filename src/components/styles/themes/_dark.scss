@@ -1,0 +1,3 @@
+@import "default";
+// todo use for-loop to go over dark theme
+$theme: map-merge($theme,(color-primary-100:#000000));

@@ -1,0 +1,54 @@
+@import '../themes/base';
+
+$button:(
+  // color
+  button-primary-hover-background-color: map-get($theme,color-primary-transparent-100),
+  button-primary-background-color: map-get($theme,color-primary-transparent-300),
+  button-primary-border-color:  map-get($theme,color-primary-500),
+  button-primary-color: map-get($theme,color-primary-500),
+
+  button-success-hover-background-color: map-get($theme,color-success-transparent-100),
+  button-success-background-color: map-get($theme,color-success-transparent-300),
+  button-success-border-color:  map-get($theme,color-success-500),
+  button-success-color: map-get($theme,color-success-500),
+
+  button-info-hover-background-color: map-get($theme,color-info-transparent-100),
+  button-info-background-color: map-get($theme,color-info-transparent-300),
+  button-info-border-color:  map-get($theme,color-info-500),
+  button-info-color: map-get($theme,color-info-500),
+
+  button-warning-hover-background-color: map-get($theme,color-warning-transparent-100),
+  button-warning-background-color: map-get($theme,color-warning-transparent-300),
+  button-warning-border-color:  map-get($theme,color-warning-500),
+  button-warning-color: map-get($theme,color-warning-500),
+
+  button-danger-hover-background-color: map-get($theme,color-danger-transparent-100),
+  button-danger-background-color: map-get($theme,color-danger-transparent-300),
+  button-danger-border-color:  map-get($theme,color-danger-500),
+  button-danger-color: map-get($theme,color-danger-500),
+
+
+  // font
+  text-button-font-family:  map-get($theme, font-family),
+  text-button-font-weight: 600,
+
+  // font size and line height
+  text-button-small-font-size: 0.75rem,
+  text-button-small-font-line-height: 1rem,
+  text-button-medium-font-size: 0.875rem,
+  text-button-medium-font-line-height: 1rem,
+  text-button-large-font-size: 1rem,
+  text-button-large-font-line-height: 1.25rem,
+
+  // padding
+  button-small-padding: 0.4375rem 0.875rem,
+  button-medium-padding: 0.6875rem 1.125rem,
+  button-large-padding: 0.8125rem 1.125rem,
+
+  // border-style
+  button-border-style: solid,
+  button-border-radius: 4px 4px 4px 4px,
+  button-border-width: 1px,
+
+);
+

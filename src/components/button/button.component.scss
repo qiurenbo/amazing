@@ -1,0 +1,43 @@
+
+@import "../styles/themes/dark";
+@import "./mixins";
+
+// default prefix is am-btn
+$btn-prefix-cls: #{$am-prefix}-btn;
+
+// .am-btn
+.#{$btn-prefix-cls} {
+
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family:  map-get($theme, text-button-font-family);
+  font-weight: map-get($theme, text-button-font-weight);
+
+  border-style:  map-get($theme, button-border-style);
+  border-radius: map-get($theme,  button-border-radius);
+  border-width:  map-get($theme,  button-border-width);
+
+  // .am-btn-primary  .am-btn-success .am-btn-info .am-btn-warning  .am-btn-danger
+  // contains border color, background color and font color
+  $types: primary,success,info,warning,danger;
+  @each $type in $types {
+    &-#{$type} {
+      @include  btn-type-color-cls($type);
+    }
+
+    &-#{$type}:hover {
+      @include  btn-type-hover-cls($type);
+    }
+  }
+
+  // .am-btn-primary  .am-btn-success .am-btn-info .am-btn-warning  .am-btn-danger
+   // contains font size, line height and padding
+  $sizes: large,medium,small;
+  @each $size in $sizes {
+    &-#{$size} {
+      @include btn-size-cls($size);
+     }
+  }
+
+}
